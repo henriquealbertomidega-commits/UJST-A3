@@ -11,15 +11,18 @@ public class UserModel {
     private List<Object> metodoPagamento = null;
     
     private List<List<ProdutosERestaurant>> historicoPedidos = new ArrayList<>();
+    
+    // ➕ Inclusão da taxa de entrega
+    private double taxaEntrega;
 
-    public UserModel(String username, String password, String email, String phoneNumber, List<ProdutosERestaurant> carrinho, List<Object> metodoPagamento) {
+    public UserModel(String username, String password, String email, String phoneNumber, List<ProdutosERestaurant> carrinho, List<Object> metodoPagamento, double taxaEntrega) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.carrinho = carrinho;
         this.metodoPagamento = metodoPagamento;
-
+        this.taxaEntrega = taxaEntrega; // inicializa a taxa de entrega
     }
 
     public String getUsername() {
@@ -65,6 +68,14 @@ public class UserModel {
     }
     public void setMetodoPagamento(List<Object> metodoPagamento) {
         this.metodoPagamento = metodoPagamento;
+    }
+    
+    // Getter e Setter da taxa de entrega
+    public double getTaxaEntrega() {
+        return taxaEntrega;
+    }
+    public void setTaxaEntrega(double taxaEntrega) {
+        this.taxaEntrega = taxaEntrega;
     }
     
     // Não pensei nessa logica, gpt ajudou a criar / abriu minha mente 
