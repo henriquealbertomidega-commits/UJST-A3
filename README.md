@@ -28,7 +28,7 @@ Este repositório contém o desenvolvimento do projeto **NextFood**, elaborado c
 | Daniel Magalhães Pereira Dos Santos  | 8261104325 |
 | Gabriel Ramos do Nascimento | 826176212 |
 | Arthur Leite da Silva | 826113097 |
-| Henrique Alberto Midega
+| Henrique Alberto Midega | 826195587 |
 
 ## Diagrama de Classes
 
